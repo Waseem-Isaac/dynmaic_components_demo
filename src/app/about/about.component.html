@@ -1,0 +1,31 @@
+<div>
+    <div class="card-container">
+        <div class="card card-small" tabindex="0" (click)="createComponent1()" title="Create dynmaic component in runtime with its module">
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+    
+            <span>New Component <small>with compiler</small></span>
+        </div>
+
+        <div class="card card-small" tabindex="0" (click)="createComponent2()" title="Create dynmaic component in runtime without its modul"e >
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+    
+            <span>New Component 2 <small>without compiler</small></span>
+        </div>
+    </div>
+   
+    <div style="display: flex;">
+        <div style="padding: 0 5px;">
+            <ng-template #dynamic_cmpt1></ng-template> 
+            <!-- <button (click)="destroyCompnent(1)">X</button> -->
+        </div>
+
+        <div>
+            <ng-template #dynamic_cmpt2></ng-template>
+            <!-- <button (click)="destroyCompnent(2)">X</button> -->
+
+        </div>
+    </div>
+   
+</div>
